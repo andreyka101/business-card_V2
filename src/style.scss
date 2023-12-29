@@ -2,6 +2,11 @@
   font-family: BrassMono;
   src:url("/font/Brass Mono/BrassMono-Bold.ttf");
 }
+@font-face{
+  font-family: Finlandica;
+  src:url("/font/Finlandica/Finlandica-Regular.ttf");
+}
+
 body{
   background-color: #ffffff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -145,7 +150,69 @@ header{
   }
 }
 #rates{
-  
+  padding-top: 100px;
+  padding-bottom: 100px;
+  #cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .priceList{
+      display: flex;
+      flex-direction: column;
+      width: 284.4px;
+      padding: 32px;
+      border-radius: 16px;
+      border: #0000001a 1px solid;
+      margin: 30px;
+      .price{
+        h3{
+          font-family: Open Sans, sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          color: rgba(25, 138, 225, 1);
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        h4{
+          font-family: "Finlandica";
+          font-size: 28px;
+          font-style: normal;
+          color: #000;
+          margin: 0;
+          margin-bottom: 16px;
+        }
+      }
+      .list{
+        border-top: #0000001a 1px solid;
+        padding-top: 16px;
+        .quest{
+          display: flex;
+          margin-bottom: 12px;
+          .indent{
+            display: inline-block;
+          }
+          .indentBLOCK{
+            display: block;
+          }
+        }
+      }
+      a{
+        margin-top: 20px;
+        text-decoration: none;
+        // padding: 16px 32px;
+        // display: inline-block;
+        background-color: #1a96f6;
+        color: #ffffff;
+        border-radius: 7px;
+        height: 41px;
+        // width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }
 
 
