@@ -13,9 +13,8 @@ radioPack?.addEventListener('click',(e)=>{
     // console.log("============")
     let tergN = target.parentNode?.childNodes[1] as HTMLInputElement
     // console.log(tergN.dataset.pack)
-    console.log(radioPackALL[0])
-    for(let i in radioPackALL){
-        radioPackALL[i].style.color = "black"
+    for(let i of radioPackALL){
+        i.style.color = "black"
         console.log(i)
     }
     target.style.color = "red"
