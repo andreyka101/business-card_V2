@@ -1,43 +1,49 @@
-@font-face{
+@font-face {
   font-family: BrassMono;
-  src:url("/font/Brass Mono/BrassMono-Bold.ttf");
-}
-@font-face{
-  font-family: Finlandica;
-  src:url("/font/Finlandica/Finlandica-Regular.ttf");
+  src: url("/font/Brass Mono/BrassMono-Bold.ttf");
 }
 
-body{
+@font-face {
+  font-family: Finlandica;
+  src: url("/font/Finlandica/Finlandica-Regular.ttf");
+}
+
+body {
   background-color: #ffffff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-header{
+
+header {
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  position:sticky;
+  position: sticky;
   top: 0;
   padding: 18px;
-  a{
+
+  a {
     text-decoration: none;
     margin: 10px;
     color: #585858;
     font-size: 20px;
   }
-  div{
+
+  div {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin: 10px;
     margin-left: 15px;
-    #string{
+
+    #string {
       margin-bottom: 5px;
       color: #878787;
       font-size: 14.8px;
 
     }
-    #number{
+
+    #number {
       color: #000000;
       font-size: 18px;
       font-family: "BrassMono";
@@ -47,11 +53,12 @@ header{
 
 
 
-#home{
+#home {
   display: flex;
   justify-content: center;
   margin: 120px 0px;
-  #description{
+
+  #description {
     color: #000000b3;
     display: flex;
     flex-direction: column;
@@ -59,17 +66,20 @@ header{
     width: 480px;
     margin-right: 80px;
     font-size: 20px;
-    h1{
+
+    h1 {
       line-height: 1.3;
       font-size: 48px;
       margin: 0;
       margin-bottom: 24px;
       color: #212121;
     }
-    div{
+
+    div {
       display: flex;
       margin-bottom: 24px;
-      a{
+
+      a {
         text-decoration: none;
         padding: 16px 32px;
         background-color: #1a96f6;
@@ -80,7 +90,8 @@ header{
       }
     }
   }
-  #img{
+
+  #img {
     border-radius: 70px;
     display: inline-block;
     height: 540px;
@@ -88,15 +99,18 @@ header{
     background: url(/png/wts.jpeg)center/cover;
   }
 }
-#blockSVG{
+
+#blockSVG {
   background-color: #f7f8fa;
   padding-top: 120px;
   padding-bottom: 90px;
-  #stolenSVG{
-    .flex{
+
+  #stolenSVG {
+    .flex {
       display: flex;
       justify-content: space-evenly;
-      .block{
+
+      .block {
         margin-top: 40px;
         display: flex;
         flex-direction: column;
@@ -104,7 +118,8 @@ header{
         align-items: center;
         height: 206px;
         width: 350px;
-        .svg{
+
+        .svg {
           height: 80px;
           width: 80px;
           // background-color: #878787;
@@ -116,22 +131,25 @@ header{
           box-shadow: 0px 0px 40px #0000004d;
           // box-shadow: 0px 8px 40px rgba(188, 47, 47, 0.961);
         }
-        span{
-          text-align: center ;
+
+        span {
+          text-align: center;
           margin-top: 20px;
-          color:#212121;
+          color: #212121;
           font-size: 28px;
         }
       }
     }
   }
-  
+
 }
-.title{
+
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2{
+
+  h2 {
     line-height: 1.3;
     font-size: 48px;
     margin: 0;
@@ -139,7 +157,8 @@ header{
     color: #212121;
     text-align: center;
   }
-  span{
+
+  span {
     color: #000000b3;
     font-size: 27px;
     width: 730px;
@@ -149,15 +168,46 @@ header{
     margin-bottom: 30px;
   }
 }
-#rates{
+
+#rates {
   padding-top: 100px;
   padding-bottom: 100px;
-  #cards{
+
+  #settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 32px;
+    border-radius: 16px;
+    border: #0000001a 1px solid;
+    margin: 30px auto;
+    box-shadow: 0px 0px 5px #000000;
+    #radioBox{
+      display: flex;
+      #pack{
+        display: flex;
+        label{
+          padding: 2px;
+    border-radius: 16px;
+    border: #0000001a 1px solid;
+    margin: 5px;
+        }
+      }
+      #lesson{
+        display: flex;
+        
+      }
+    }
+  }
+
+  #cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    .priceList{
+
+    .priceList {
       display: flex;
       flex-direction: column;
       width: 284.4px;
@@ -165,8 +215,9 @@ header{
       border-radius: 16px;
       border: #0000001a 1px solid;
       margin: 30px;
-      .price{
-        h3{
+
+      .price {
+        h3 {
           font-family: Open Sans, sans-serif;
           font-weight: 700;
           font-style: normal;
@@ -174,7 +225,8 @@ header{
           margin: 0;
           margin-bottom: 10px;
         }
-        h4{
+
+        h4 {
           font-family: "Finlandica";
           font-size: 28px;
           font-style: normal;
@@ -183,21 +235,26 @@ header{
           margin-bottom: 16px;
         }
       }
-      .list{
+
+      .list {
         border-top: #0000001a 1px solid;
         padding-top: 16px;
-        .quest{
+
+        .quest {
           display: flex;
           margin-bottom: 12px;
-          .indent{
+
+          .indent {
             display: inline-block;
           }
-          .indentBLOCK{
+
+          .indentBLOCK {
             display: block;
           }
         }
       }
-      a{
+
+      a {
         margin-top: 20px;
         text-decoration: none;
         // padding: 16px 32px;
@@ -214,6 +271,3 @@ header{
     }
   }
 }
-
-
-

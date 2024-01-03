@@ -149,10 +149,20 @@
       <span>оплата за одно индивидуальное занятие</span>
       <div id="radioBox">
         <div id="pack">
-
-        </div>
+            <input type="radio" id="quantity1" data-pack="1" name="pack" checked>
+            <label class="inputPack" for="quantity1">1</label>
+            <input type="radio" id="quantity10" data-pack="10" name="pack">
+            <label class="inputPack" for="quantity10">10</label>
+            <input type="radio" id="quantity30" data-pack="30" name="pack">
+            <label class="inputPack" for="quantity30">30</label>
+            <input type="radio" id="quantity60" data-pack="60" name="pack">
+            <label class="inputPack" for="quantity60">60</label>
+          </div>
         <div id="lesson">
-
+            <input type="radio" id="individual" name="lesson" checked>
+            <label for="individual">индивидуальное</label>
+            <input type="radio" id="group" name="lesson">
+            <label for="group">групповое</label>
         </div>
       </div>
     </div>
@@ -293,7 +303,7 @@
             Улучшение оценок в школе
           </h3>
           <h4>
-            2000 ₽/60 мин
+            120.000 ₽/3.600 мин
           </h4>
         </div>
         <div class="list">
@@ -339,8 +349,7 @@
   </div>
 
 
-
-  <script type="module" src="/src/main.ts"></script>
 </body>
+  <script type="module" src="/src/main.ts"></script>
 
 </html>
