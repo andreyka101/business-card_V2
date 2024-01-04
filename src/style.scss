@@ -184,16 +184,22 @@ header {
     margin: 30px auto;
     box-shadow: 0px 0px 5px #000000;
 
-    span{
-
+    span {
+      font-size: 20.7px;
+      font-family: Open Sans, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: rgba(25, 138, 225, 1);
+      margin: 0;
+      margin-bottom: 10px;
     }
 
     #radioBox {
       display: flex;
 
       // label для pack и lasson
-      label{
-        user-select:none;
+      label {
+        user-select: none;
         color: #000;
         font-family: "Finlandica";
         padding: 8px;
@@ -202,25 +208,26 @@ header {
         margin: 5px;
         background-color: aliceblue;
       }
-      input{
+
+      input {
         display: none;
       }
 
       #pack {
         display: flex;
 
-        input:checked + label {
+        input:checked+label {
           color: rgb(255, 255, 255);
           background-color: #1a96f6;
           // background-color: rgb(52, 52, 52);
         }
       }
-      
+
       #lesson {
         display: flex;
         margin-left: 50px;
-        
-        input:checked + label {
+
+        input:checked+label {
           color: rgb(255, 255, 255);
           // background-color: #1a96f6;
           background-color: rgb(52, 52, 52);
@@ -261,6 +268,10 @@ header {
           color: #000;
           margin: 0;
           margin-bottom: 16px;
+
+          p {
+            margin: 4px 0px;
+          }
         }
       }
 
