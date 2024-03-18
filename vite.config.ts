@@ -10,7 +10,7 @@ export default {
         // @ts-ignore
         log: resolve(__dirname, '/src/login/log.html'),
         // @ts-ignore
-        reg: resolve(__dirname, '/src/registration/reg.html'),
+        reg: resolve(__dirname, '/src/login/reg.html'),
       }
     }
   }
