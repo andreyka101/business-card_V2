@@ -8,7 +8,7 @@ export default {
         // @ts-ignore
         main: resolve(__dirname, 'index.html'),
         // @ts-ignore
-        movie: resolve(__dirname, '/src/entrance/entrance.html'),
+        en: resolve(__dirname, '/src/login/log.html'),
       }
     }
   }
