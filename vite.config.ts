@@ -8,7 +8,9 @@ export default {
         // @ts-ignore
         main: resolve(__dirname, 'index.html'),
         // @ts-ignore
-        en: resolve(__dirname, '/src/login/log.html'),
+        log: resolve(__dirname, '/src/login/log.html'),
+        // @ts-ignore
+        reg: resolve(__dirname, '/src/registration/reg.html'),
       }
     }
   }
