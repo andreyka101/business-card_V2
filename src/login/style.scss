@@ -18,6 +18,70 @@ body {
     margin: 30px;
 }
 
+form{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px #000000;
+    border-radius: 16px;
+    padding: 30px;
+    input{
+        border-radius: 7px;
+        padding: 5px;
+        border: #000000 solid 1px;
+        margin: 5px;
+    }
+    input:focus {
+        // я убрал жирную обводку 
+        outline: 2px solid #067fdc;
+        border: 1px solid #ffffff;
+    }
+    input:focus:hover {
+        // я убрал жирную обводку 
+        outline: 2px solid #067fdc;
+        border: 1px solid #ffffff;
+    }
+    .click_button{
+        border-radius: 7px;
+        padding: 7px;
+        border: #000000 solid 0px;
+        margin: 5px;
+        color: #ffffff;
+        background-color: #067fdc;
+    }
+    input:hover{
+        border: #676767 solid 1px;
+    }
+    button:hover{
+        background-color: #0461a7;
+    }
+}
+
+.joinForm{
+    font-size: 15px;
+    max-width: 231px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    
+    border-radius: 16px;
+    padding: 30px;
+    .click_a{
+        margin: 5px;
+        color: #056fc0;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #034b83;
+    }
+    
+}
+.joinForm:hover{
+    box-shadow: 0px 0px 2px #000000;
+}
+
 .back:hover {
     background-color: #0464ad;
 }

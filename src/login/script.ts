@@ -1,6 +1,7 @@
 import './style.scss'
 
 
+const form = document.querySelector('form') as HTMLFormElement
 const createUser = document.querySelector('#createUser')
 const entrance = document.querySelector('#entrance')
 const name = document.querySelector('#name') as HTMLInputElement
@@ -55,3 +56,9 @@ entrance?.addEventListener('click', async () => {
         
     }
 })
+
+
+form?.addEventListener('click',()=>{
+    
+})
+
