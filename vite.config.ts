@@ -11,6 +11,10 @@ export default {
         log: resolve(__dirname, '/src/login/log.html'),
         // @ts-ignore
         reg: resolve(__dirname, '/src/login/reg.html'),
+        // @ts-ignore
+        client: resolve(__dirname, '/src/user/client.html'),
+        // @ts-ignore
+        admin: resolve(__dirname, '/src/user/admin.html'),
       }
     }
   }
