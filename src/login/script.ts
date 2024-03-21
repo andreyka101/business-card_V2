@@ -50,15 +50,12 @@ entrance?.addEventListener('click', async () => {
             body: JSON.stringify(obj)
         }) as any
         ping = await ping.json()
+        console.log(ping);
+        
         if(ping.name == name.value) window.location.href = "../user/client.html"
     }
     catch{
         
     }
-})
-
-
-form?.addEventListener('click',()=>{
-    
 })
 

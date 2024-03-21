@@ -62,12 +62,7 @@ form{
 
 .joinForm{
     font-size: 15px;
-    max-width: 231px;
-    margin: 50px auto;
-    background-color: #ffffff;
-    
-    border-radius: 16px;
-    padding: 30px;
+    margin-top: 10px;
     .click_a{
         margin: 5px;
         color: #056fc0;
@@ -77,9 +72,6 @@ form{
         color: #034b83;
     }
     
-}
-.joinForm:hover{
-    box-shadow: 0px 0px 2px #000000;
 }
 
 .back:hover {
