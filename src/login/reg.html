@@ -9,18 +9,57 @@
     <div>
         <a href="../../index.html" class="back">назад</a>
     </div>
-    <form>
-        <input type="text" id="name" placeholder="имя">
-        <input type="text" id="surname" placeholder="фамилия">
-        <input type="email" id="email" placeholder="почта">
-        <input type="password" id="password" placeholder="пароль">
-        <input type="password" id="passwordCopy" placeholder="повторите пароль">
+    <div class="form">
+        <div>
+            <div>
+                <span id="nameSpan" class="formSpan">
+                    ntrcn
+                </span>
+            </div>
+            <input type="text" id="name" placeholder="имя">
+        </div>
+        <div>
+            <div>
+                <span id="surnameSpan" class="formSpan">
+                    ntrcn
+                </span>
+            </div>
+            <input type="text" id="surname" placeholder="фамилия">
+        </div>
+        <div>
+            <div>
+                <span id="emailSpan" class="formSpan">
+                    ntrcn
+                </span>
+            </div>
+            <input type="email" id="email" placeholder="почта">
+        </div>
+        <div>
+            <div>
+                <span id="passwordSpan" class="formSpan">
+                </span>
+            </div>
+            <input type="password" id="password" placeholder="пароль">
+        </div>
+        <div>
+            <div>
+                <span id="passwordCopySpan" class="formSpan">
+                    <p>
+                        пароль должен быть
+                    </p>
+                    <p>
+                        не короче 8 символов 
+                    </p>
+                </span>
+            </div>
+            <input type="password" id="passwordCopy" placeholder="повторите пароль">
+        </div>
         <button id="createUser" class="click_button">Продолжить</button>
         <div class="joinForm">
             У вас уже есть аккаунт?
             <a href="./log.html" class="click_a">войти</a>
         </div>
-    </form>
+    </div> 
 
 
     <script type="module" src="/src/login/script.ts"></script>
