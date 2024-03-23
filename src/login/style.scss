@@ -1,3 +1,6 @@
+:root{
+    --colorInput:#000000;
+}
 body {
     margin: 0;
     background-color: #ffffff;
@@ -37,12 +40,12 @@ body {
     input:focus {
         // я убрал жирную обводку 
         outline: 2px solid #067fdc;
-        border: 1px solid #ffffff;
+        border: 1px solid #ffffff !important;
     }
     input:focus:hover {
         // я убрал жирную обводку 
         outline: 2px solid #067fdc;
-        border: 1px solid #ffffff;
+        border: 1px solid #ffffff !important;
     }
     .click_button{
         border-radius: 7px;
@@ -53,7 +56,7 @@ body {
         background-color: #067fdc;
     }
     input:hover{
-        border: #676767 solid 1px;
+        border: #676767 solid 1px !important;
     }
     button:hover{
         background-color: #0461a7;
