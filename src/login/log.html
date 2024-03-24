@@ -12,9 +12,27 @@
         <a href="../../index.html" class="back">назад</a>
     </div>
     <div class="form">
-        <input type="text" id="name" class="inp" placeholder="имя">
-        <input type="text" id="surname" class="inp" placeholder="фамилия">
-        <input type="password" id="password" class="inp" placeholder="пароль">
+        <div>
+            <div id="nameDiv" style="display: none;">
+                <span id="nameSpan" class="formSpan">
+                </span>
+            </div>
+            <input type="text" id="name" placeholder="имя">
+        </div>
+        <div>
+            <div id="surnameDiv" style="display: none;">
+                <span id="surnameSpan" class="formSpan">
+                </span>
+            </div>
+            <input type="text" id="surname" placeholder="фамилия">
+        </div>
+        <div>
+            <div id="passwordDiv" style="display: none;">
+                <span id="passwordSpan" class="formSpan">
+                </span>
+            </div>
+            <input type="password" id="password" placeholder="пароль">
+        </div>
         <button id="entrance" class="click_button">Войти</button>
         <div class="joinForm">
             Новый ученик?
