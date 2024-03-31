@@ -50,7 +50,8 @@ header {
       font-family: "BrassMono";
     }
   }
-  .entrance{
+
+  .entrance {
     text-decoration: none;
     width: 84px;
     height: 36.8px;
@@ -65,7 +66,8 @@ header {
     left: calc(100% - 134px);
     font-size: 18px;
   }
-  .entrance:hover{
+
+  .entrance:hover {
     background-color: #0464ad;
   }
 }
@@ -265,7 +267,7 @@ header {
     .priceList {
       display: flex;
       flex-direction: column;
-      width: 284.4px;
+      width: 306px;
       padding: 32px;
       border-radius: 16px;
       border: #0000001a 1px solid;
@@ -329,4 +331,67 @@ header {
       }
     }
   }
+
+
+
+  // #cards {  
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   .priceList{
+  //     margin: 10px;
+  //     display: inline-flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     width: 600px;
+  //     // height: 106px;
+  //     border-radius: 16px;
+  //     border: #0000001a 1px solid;
+  //     padding: 32px;
+
+  //     .price {
+  //       h3 {
+  //         font-family: Open Sans, sans-serif;
+  //         font-weight: 700;
+  //         font-style: normal;
+  //         color: rgba(25, 138, 225, 1);
+  //         margin: 0;
+  //         margin-bottom: 10px;
+  //       }
+        
+  //       h4 {
+  //         font-family: "Finlandica";
+  //         font-size: 28px;
+  //         font-style: normal;
+  //         color: #000;
+  //         margin: 0;
+  //         p {
+  //           margin: 4px 0px;
+  //           // display: inline;
+  //           // margin-left: 30px;
+  //         }
+  //       }
+  //   }
+    
+  //   // .button {
+  //     a {
+  //       font-size: 17px;
+  //       // margin-left: 130px;
+  //       text-decoration: none;
+  //       // padding: 16px 32px;
+  //       // display: inline-block;
+  //       background-color: #1a96f6;
+  //       color: #ffffff;
+  //       border-radius: 7px;
+  //       height: 41px;
+  //       width: 130px;
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: center;
+  //     }
+  //   // }
+  // }
+  // }
+
+
 }

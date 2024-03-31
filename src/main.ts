@@ -6,7 +6,7 @@ const lessonPayment = document.querySelectorAll("#rates #cards .priceList .price
 const radioLesson = document.querySelector("#settings #radioBox #lesson") as HTMLDivElement
 const titleSpan = document.querySelector("#settings span") as HTMLSpanElement
 
-let globalPrice = [1000,1500,2000]
+let globalPrice = [1200,1500,1700]
 let groupCheck = false
 let numberOfClasses = 1
 
@@ -48,7 +48,7 @@ radioLesson?.addEventListener('click', (e) => {
 })
 function changePrice(){
     let additionalInscription : string
-    if (numberOfClasses >= 10) additionalInscription = `<p>${numberOfClasses} уроков</p>`
+    if (numberOfClasses >= 10) additionalInscription = `<p>${numberOfClasses} занятий</p>`
     else additionalInscription = ``
     if(groupCheck){
         if (numberOfClasses >= 10) titleSpan.innerHTML = `оплата за ${numberOfClasses} групповых занятий`

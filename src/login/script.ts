@@ -16,6 +16,8 @@ const emailDiv = document.querySelector("#emailDiv") as HTMLDivElement
 const nameDiv = document.querySelector("#nameDiv") as HTMLDivElement
 const surnameDiv = document.querySelector("#surnameDiv") as HTMLDivElement
 
+const sive = document.querySelector(".sive") as HTMLDivElement
+
 
 createUser?.addEventListener('click', async () => {
     let checkArr = [] as Array<boolean>
@@ -114,8 +116,13 @@ createUser?.addEventListener('click', async () => {
             body: JSON.stringify(obj)
         }) as any
         ping = await ping.json()
-        console.log(ping);
-        if (ping.name == name.value) window.location.href = "../user/client.html"
+
+
+        if (ping.name == name.value) {
+            localStorage.setItem('name',name.value)
+            localStorage.setItem('surname',surname.value)
+            window.location.href = "../user/client.html"
+        }
         if (ping.name == "none") {
             const emailSpan = document.querySelector('#emailSpan') as HTMLSpanElement
             emailSpan.innerHTML = "<p>такой email уже есть,</p><p>введите другой</p>"
@@ -124,6 +131,21 @@ createUser?.addEventListener('click', async () => {
         }
     }
 })
+    
+//     declare global {
+//         interface Window {
+//             num?: any;
+//         }
+//     }
+//     window.num = 9
+// console.log(window.num);
+
+
+// sive.innerText = name.value
+// export const userLocal = {
+//     name : sive,
+//      surname : surname.value,
+// }
 
 entrance?.addEventListener('click', async () => {
     let checkArr = [] as Array<boolean>
@@ -187,7 +209,11 @@ entrance?.addEventListener('click', async () => {
             }) as any
             ping = await ping.json() as any
 
-            if (ping.name == name.value && ping.surname == surname.value && ping.password == password.value) window.location.href = "../user/client.html"
+            if (ping.name == name.value && ping.surname == surname.value && ping.password == password.value) {
+                localStorage.setItem('name',name.value)
+                localStorage.setItem('surname',surname.value)
+                window.location.href = "../user/client.html"
+            }
             else{
                 let obj = {
                     'name': name.value,
